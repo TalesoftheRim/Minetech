@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Weapons __________-->
+
+    <!-- AK47 Comrade -->
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>MT_Gun_AK47_Rifle</defName>
+        <label>Minetech AK47</label>
+        <description>A Assault rifle designed by Minetech for rugged, dusty conditions. Especially effective against unions.</description>
+        <equippedAngleOffset>40</equippedAngleOffset>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Rifle/MT_AK47</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>40000</WorkToMake>
+            <Mass>4.5</Mass>
+            <AccuracyTouch>0.64</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.61</AccuracyMedium>
+            <AccuracyLong>0.52</AccuracyLong>
+            <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>60</Steel>
+            <ComponentIndustrial>9</ComponentIndustrial>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+                <warmupTime>1.0</warmupTime>
+                <range>32.9</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <soundCast>Shot_AssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!-- Pistol -->
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>MT_Pistol</defName>
+        <label>MineTech Pistol</label>
+        <description>A Minetech designed pistol for rugged and dusty conditions.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Handgun/MT_Pistol</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.5</uiIconScale>
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <displayPriority>405</displayPriority>
+        </recipeMaker>
+        <weaponTags>
+            <li>SimpleGun</li>
+            <li>Autopistol</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>5000</WorkToMake>
+            <Mass>1.2</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.30</AccuracyLong>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>30</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_Autopistol</defaultProjectile>
+                <warmupTime>0.3</warmupTime>
+                <range>25.9</range>
+                <soundCast>Shot_Autopistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!--__________ Melee __________-->
+
+    <!-- Drill -->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>MT_Drill</defName>
+        <label>MineTech Drill</label>
+        <description>Every miners favorite tool, it sure beats a pickaxe. </description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/MT_Drill</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-45</equippedAngleOffset>
+        <techLevel>Industrial</techLevel>
+        <weaponTags>
+            <li>NeolithicMeleeDestructive</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>13000</WorkToMake>
+            <Mass>7.0</Mass>
+        </statBases>
+        <equippedStatOffsets>
+            <MiningSpeed>0.85</MiningSpeed>
+			<MoveSpeed>-0.25</MoveSpeed>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>55</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Demolish</li>
+                </capacities>
+                <power>7.5</power>
+                <cooldownTime>1</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <displayPriority>450</displayPriority>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="ShowTools.ToolExtension"> <!-- Thanks to Sir Van for allowing the usage of ShowTool.dll -->
+                <jobDefs>
+                    <li>Mine</li>
+                    <li MayRequire="Ogliss.TheWhiteCrayon.Quarry">QRY_MineQuarry</li>
+                </jobDefs>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!-- Grinder -->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>MT_Grinder</defName>
+        <label>MineTech Grinder</label>
+        <description>Every miners favorite tool, helps with construction and cutting through mechs.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/MT_Grinder</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-45</equippedAngleOffset>
+        <techLevel>Industrial</techLevel>
+        <weaponTags>
+            <li>NeolithicMeleeDestructive</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>13000</WorkToMake>
+            <Mass>7.0</Mass>
+        </statBases>
+        <equippedStatOffsets>
+			<ConstructionSpeed>0.85</ConstructionSpeed>
+			<MoveSpeed>-0.25</MoveSpeed>
+           <ButcheryMechanoidEfficiency>0.30</ButcheryMechanoidEfficiency>
+           <ButcheryMechanoidSpeed>0.80</ButcheryMechanoidSpeed>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>55</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Demolish</li>
+                </capacities>
+                <power>7.5</power>
+                <cooldownTime>1</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <displayPriority>450</displayPriority>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="ShowTools.ToolExtension"> <!-- Thanks to Sir Van for allowing the usage of ShowTool.dll -->
+                <jobDefs>
+                    <li>SmoothFloor</li>
+                    <li>SmoothWall</li>
+                    <li>RemoveRoof</li>
+                    <li>BuildRoof</li>
+                    <li>Repair</li>
+                    <li>Deconstruct</li>
+                    <li>FinishFrame</li>
+                </jobDefs>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+</Defs>

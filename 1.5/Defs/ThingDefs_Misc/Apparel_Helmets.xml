@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- MineTech Miner Helmet-->
+
+	<ThingDef ParentName="ArmorMachineableBase" Name="MT_MinerHelm_Visor_Base" Abstract="True">
+		<description>OSHA Required head protection with adjustable visor used to stop head fatalities.</description>
+		<label>Minetech Miner Helmet (Miner Visor)</label>
+		<graphicData>
+			<texPath>Things/Apparel/Helmets/MT_MinerHelm_icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>75</Steel>
+        </costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>21000</WorkToMake>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+        <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+         <VacuumResistance>0.69</VacuumResistance>
+        </equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Helmets/MT_MinerHelm</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Soldier</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--VAE code for apparel switching-->
+
+	<ThingDef ParentName="MT_MinerHelm_Visor_Base">
+		<defName>MT_MinerHelm</defName>
+		<graphicData>
+			<texPath>Things/Apparel/Helmets/MT_MinerHelm_icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Helmets/MT_MinerHelm</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>MT_MinerHelm_UP</SwitchTo>
+				<graphicPath>Things/Apparel/Helmets/MT_MinerHelm_open</graphicPath>
+				<Label>open visor</Label>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="MT_MinerHelm_Visor_Base">
+		<defName>MT_MinerHelm_UP</defName>
+		<graphicData>
+			<texPath>Things/Apparel/Helmets/MT_MinerHelm_UP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Helmets/MT_MinerHelm_UP</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>MT_MinerHelm</SwitchTo>
+				<graphicPath>Things/Apparel/Helmets/MT_MinerHelm_close</graphicPath>
+				<Label>close visor</Label>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- MineTech Security Helmet-->
+
+	<ThingDef ParentName="ArmorMachineableBase" Name="MT_SecHelm_Visor_Base" Abstract="True">
+		<description>OSHA Required head protection with adjustable visor used to stop head fatalities from unionizers.</description>
+		<label>Minetech Security Helmet (Visor)</label>
+		<graphicData>
+			<texPath>Things/Apparel/Helmets/MT_SecHelm_icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OrbitalTech</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>75</Steel>
+        </costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>21000</WorkToMake>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>1.12</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+        <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+         <VacuumResistance>0.69</VacuumResistance>
+        </equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Helmets/MT_SecHelm</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Soldier</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--VAE code for apparel switching-->
+
+	<ThingDef ParentName="MT_SecHelm_Visor_Base">
+		<defName>MT_SecHelm</defName>
+		<graphicData>
+			<texPath>Things/Apparel/Helmets/MT_SecHelm_icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Helmets/MT_SecHelm</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>MT_SecHelm_UP</SwitchTo>
+				<graphicPath>Things/Apparel/Helmets/MT_SecHelm_open</graphicPath>
+				<Label>open visor</Label>
+			</li>
+		</comps>
+    <smeltable>false</smeltable>
+	</ThingDef>
+
+	<ThingDef ParentName="MT_SecHelm_Visor_Base">
+		<defName>MT_SecHelm_UP</defName>
+		<graphicData>
+			<texPath>Things/Apparel/Helmets/MT_SecHelm_UP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Helmets/MT_SecHelm_UP</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>MT_SecHelm</SwitchTo>
+				<graphicPath>Things/Apparel/Helmets/MT_SecHelm_close</graphicPath>
+				<Label>close visor</Label>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>
