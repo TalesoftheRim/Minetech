@@ -27,9 +27,8 @@
 			<Mass>2</Mass>
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.2</ArmorRating_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>2</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -49,7 +48,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Soldier</li>
+				<li>MT_Apparel_Miner</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -73,11 +72,11 @@
 			<wornGraphicPath>Things/Apparel/Helmets/MT_MinerHelm</wornGraphicPath>
 		</apparel>
 		<comps>
-			<!--<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>MT_MinerHelm_UP</SwitchTo>
 				<graphicPath>Things/Apparel/Helmets/MT_MinerHelm_open</graphicPath>
 				<Label>open visor</Label>
-			</li> -->
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -92,11 +91,11 @@
 			<wornGraphicPath>Things/Apparel/Helmets/MT_MinerHelm_UP</wornGraphicPath>
 		</apparel>
 		<comps>
-			<!-- <li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>MT_MinerHelm</SwitchTo>
 				<graphicPath>Things/Apparel/Helmets/MT_MinerHelm_close</graphicPath>
-				<Label>close visor</Label> 
-			</li> -->
+				<Label>close visor</Label>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -126,9 +125,8 @@
 			<Mass>2</Mass>
 			<ArmorRating_Sharp>1.12</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.3</ArmorRating_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>2</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -148,7 +146,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Soldier</li>
+				<li>MT_Apparel_Security</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -172,11 +170,11 @@
 			<wornGraphicPath>Things/Apparel/Helmets/MT_SecHelm</wornGraphicPath>
 		</apparel>
 		<comps>
-			<!--<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>MT_SecHelm_UP</SwitchTo>
 				<graphicPath>Things/Apparel/Helmets/MT_SecHelm_open</graphicPath>
 				<Label>open visor</Label>
-			</li> -->
+			</li>
 		</comps>
     <smeltable>false</smeltable>
 	</ThingDef>
@@ -192,11 +190,11 @@
 			<wornGraphicPath>Things/Apparel/Helmets/MT_SecHelm_UP</wornGraphicPath>
 		</apparel>
 		<comps>
-			<!-- <li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>MT_SecHelm</SwitchTo>
 				<graphicPath>Things/Apparel/Helmets/MT_SecHelm_close</graphicPath>
 				<Label>close visor</Label>
-			</li> -->
+			</li>
 		</comps>
 	</ThingDef>
 

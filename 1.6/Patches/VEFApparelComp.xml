@@ -3,7 +3,7 @@
 
 	<!-- Added this patches since MayRequire didn't work for some reason -->
 
-	<Operation Class="PatchOperationFindMod">
+	<!-- <Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Expanded Framework</li>
 		</mods>
@@ -56,6 +56,6 @@
 
 			</operations>
 		</match>
-	</Operation>
+	</Operation> -->
 
 </Patch>

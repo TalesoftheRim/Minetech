@@ -54,7 +54,18 @@
             <layers>
                 <li>Middle</li>
             </layers>
+            <tags>
+                <li>MT_Apparel_Miner</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
         </apparel>
+        <tradeTags>
+            <li>Clothing</li>
+            <li>Armor</li>
+        </tradeTags>
     </ThingDef>
 
     <!-- MineTech Security Armor-->
@@ -110,7 +121,17 @@
             <layers>
                 <li>Middle</li>
             </layers>
+            <tags>
+                <li>MT_Apparel_Security</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
         </apparel>
+        <tradeTags>
+            <li>Clothing</li>
+            <li>Armor</li>
+        </tradeTags>
     </ThingDef>
     
 </Defs>

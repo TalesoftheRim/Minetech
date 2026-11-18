@@ -4,24 +4,21 @@
 	<name>MineTech</name>
 	<author>Talesoftherim</author>
 	<supportedVersions>
-	  <li>1.4</li>
 	  <li>1.5</li>
 	  <li>1.6</li>
 	  <li>1.7</li>
 	</supportedVersions>
 		<packageId>Talesoftherim.Minetech</packageId>
-	<description>From the hit Talesoftherim youtube series "Minetech" If you wanted to be part of the most distopian mining company this side of the rim, suit up, because you're hired.</description>
+	<description>stuff</description>
 
     <modDependencies>
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 			<displayName>Vanilla Expanded Framework</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
-		<li>ludeon.rimworld.odyssey</li>
 		<li>brrainz.harmony</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
